@@ -1,0 +1,109 @@
+/**
+PsourceMediathek Admin Css file
+*/
+
+/***
+Single gallery edit panels*/
+
+/**
+ * Reload Icon
+ */
+.psmt-reload {
+	position: absolute;
+	right: 10px;
+	top: 2px;
+	text-decoration: none;
+}
+.psmt-reload .dashicons {
+	padding-right: 5px;
+}
+/**
+ * Upload dropzone
+ */
+.psmt-dropzone {
+	border: 4px dashed #b4b9be;
+    height: 200px;
+}
+.psmt-drag-drop-inside{
+	margin: 70px auto 0;
+    width: 250px;
+}
+.psmt-drag-drop-inside p {
+	display: block;
+	margin: 5px 0;
+	text-align: center;
+	color: #a0a5aa;
+    font-size: 14px;
+    
+}
+.psmt-drag-drop-inside p.psmt-drag-drop-info {
+	font-size: 20px;
+}
+
+body.post-type-psmt-gallery .page-title-action {
+	display: none;
+}
+/**
+ * Admin buttons on edit gallery page
+ *
+ */
+.psmt-media-edit-bulk-action-row {
+	margin-bottom: 10px;
+}
+.psmt-container .psmt-admin-button-delete {
+	background: #ED9100;
+	border-color: #fff;
+	box-shadow: none;
+	border-radius: 5px;
+}
+.psmt-container .psmt-admin-button-delete:hover {
+	background: #DE9420;
+	border-color: #fff;
+	box-shadow: none;
+}
+.psmt-container .psmt-admin-button-primary {
+	border-color: #fff;
+	box-shadow: none;
+	border-radius: 5px;
+}
+
+.psmt-container .psmt-admin-button-delete {
+	background: #ED9100;
+	border-color: #fff;
+	box-shadow: none;
+	border-radius: 5px;
+}
+.psmt-container .psmt-admin-button-delete:hover {
+	background: #DE9420;
+	border-color: #fff;
+	box-shadow: none;
+}
+.psmt-container .psmt-admin-button-primary {
+	border-color: #fff;
+	box-shadow: none;
+	border-radius: 5px;
+}
+#psmt-edit-media-bulk-action{
+	display: inline-block;
+	margin-top: 0;
+}
+span.psmt-admin-shortcode-title {
+	font-size: 18px;
+}
+@media screen and ( max-width: 980px ) {
+	
+	#psmt-editable-media-list  [class*="psmt-u"]{
+		width: 100%;
+		display: block;
+		float: none;
+	}
+}
+
+.psmt-remote-media-url {
+	width:100%;
+	padding: 10px;
+}
+.psmt-add-remote-media {
+	padding: 10px;
+	top: 0;
+}
