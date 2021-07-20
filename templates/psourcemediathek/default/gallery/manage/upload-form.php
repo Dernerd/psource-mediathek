@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <ul></ul>
         </div>
         <div class="psmt-remote-add-media-row">
-            <input type="text" placeholder="<?php _e( 'Enter a link', 'psourcemediathek' );?>" value="" name="psmt-remote-media-url" id="psmt-remote-media-url" class="psmt-remote-media-url"/>
+            <input type="text" placeholder="<?php _e( 'Gib einen Link ein', 'psourcemediathek' );?>" value="" name="psmt-remote-media-url" id="psmt-remote-media-url" class="psmt-remote-media-url"/>
             <button id="psmt-add-remote-media" class="psmt-add-remote-media"><?php _e( '+Hinzufügen', 'psourcemediathek' ); ?></button>
         </div>
 
