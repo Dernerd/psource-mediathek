@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: PS Mediathek
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: WMS N@W
  * Plugin URI: https://n3rds.work/psourcemediathek/
  * Author URI: https://n3rds.work

@@ -165,7 +165,7 @@ function psmt_add_comment( $commentdata ) {
 	/**
 	 * Filter a comment's data before it is sanitized and inserted into the database.
 	 *
-	 * @since 1.5.0
+	 * @since 1.0.0
 	 *
 	 * @param array $commentdata Comment data.
 	 */

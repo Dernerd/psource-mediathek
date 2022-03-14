@@ -239,7 +239,7 @@ function psmt_get_gallery_creator_id( $gallery = null ) {
 /**
  * Print Link to Gallery creator's profile.
  *
- * @since 1.1.5
+ * @since 1.0.0
  *
  * @param PSMT_Gallery $gallery gallery id or object.
  */
@@ -250,7 +250,7 @@ function psmt_gallery_creator_link( $gallery = null ) {
 /**
  * Get Gallery creator's link
  *
- * @since 1.1.5
+ * @since 1.0.0
  *
  * @param int|PSMT_Gallery $gallery gallery id or object.
  *

@@ -3,7 +3,7 @@ Contributors: dern3rd
 Tags: buddypress, buddypress album, buddypress gallery, buddypress photo gallery, video gallery, audio gallery, document gallery, media
 Requires at least: 4.5.0
 Tested up to: 5.7
-Stable tag: 1.5.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,103 +52,6 @@ PsourceMediathek gives full control to the site admins while making it easier fo
  * Widgets to help you list galleries, media, playlist , audio etc.
  * Extensive [admin options](https://buddydev.com/psourcemediathek/topics/getting-started/settings-options/configuring-psourcemediathek/ "Configuring PsourceMediathek").
 
-= Are you a developer? =
-
-Here is a short list of things you can do with few lines of code:-
-
-*	Use a different storage manager( we support local uploads in core, you can write one for the cloud, check core/storage/storage-manager.php for details)
-*	Add support for a new [Media Type](https://buddydev.com/psourcemediathek/topics/api-reference/core/media-type/psmt_register_type/).
-*	Write a custom media loop using [PSMT_Media_Query](https://buddydev.com/psourcemediathek/topics/api-reference/core/psmt_media_query/)
-*	Write your own custom Gallery loop/list using [PSMT_Gallery_Query](https://buddydev.com/psourcemediathek/topics/api-reference/core/psmt_gallery_query/)
-
-We have also got some nice developer documentation ready for you and more will keep coming in future.
-
-
-= Links =
-
-*	[PsourceMediathek Site](https://buddydev.com/psourcemediathek/ "PsourceMediathek site" )
-*	[Demo]( http://demos.buddydev.com/psourcemediathek/ "PsourceMediathek demo")
-*	[Support](https://buddydev.com/support/forums/)
-*	[Github Development Repo](https://github.com/buddydev/psourcemediathek)
-*	[API Guides](https://buddydev.com/psourcemediathek/guides/api-guides/)
-*	[Admin Guide](https://buddydev.com/psourcemediathek/guides/getting-started/)
-*	[API Reference](https://buddydev.com/psourcemediathek/guides/api-reference/) - progressing
-*	[Template Tags](https://buddydev.com/psourcemediathek/guides/api-reference/template-tags/)
-*   [Uploader Javascript Event Lifecycle](https://buddydev.com/psourcemediathek/topics/api-guides/psourcemediathek-uploader-events-lifecycle/)
-*   [Lighbox Javascript API](https://buddydev.com/psourcemediathek/topics/api-guides/lightbox/psourcemediathek-lightbox-javascript-api/)
-*	More to come soon.
-
-If you are looking to extend PsourceMediathek further, we have some free and paid addons for you
-
-= Extending with Addons =
-Here are some of our available addons for PsourceMediathek.
-
-*	[PsourceMediathek Media Moderator](https://buddydev.com/plugins/media-moderator-for-psourcemediathek/)
-*	[PsourceMediathek Media View Counter](https://buddydev.com/plugins/psmt-media-view-counter/) - Free
-*	[PsourceMediathek Media Rating](https://buddydev.com/plugins/psmt-media-rating/) - Free
-*	[PsourceMediathek Featured Content](https://wordpress.org/plugins/psmt-featured-content/) - Free
-*	[PsourceMediathek Set Profile Photo](https://buddydev.com/plugins/psmt-set-profile-photo/) - Free
-*	[PsourceMediathek myCRED Addon](https://buddydev.com/plugins/psourcemediathek-mycred-addon/) - Free
-*	[PsourceMediathek Downloadable Media](https://buddydev.com/plugins/psmt-downloadable-media/)
-*	[PsourceMediathek Upload Terms of Service](https://buddydev.com/plugins/psmt-upload-tos/)
-*	[PsourceMediathek S2Member Storage Limit](https://buddydev.com/plugins/psmt-s2member-storage-limit/)
-*	[PsourceMediathek Flexible Storage Limit](https://buddydev.com/plugins/psmt-flexible-storage-limit/)
-*	[MediaMark:- Watermarking solution for PsourceMediathek](https://buddydev.com/plugins/mediamark/)
-*	[PsourceMediathek Paid Memberships Pro Restrictions](https://buddydev.com/plugins/paid-memberships-pro-restrictions-for-psourcemediathek/)
-*	more coming soon
-
-**Looking for more powerful BuddyPress plugins?** Check out our list of amazing [BuddyPress plugins](https://buddydev.com/plugins/).
-
-We are here to help with everything you need with PsourceMediathek.
-Please use BuddyDev community forum or premium forums for support(We support both free & paid members without any differentiation ).
-
-PsourceMediathek is young, If there is a feature that you need, please let us know at our forums. We will be happy to have it if it is going to help the community.
-PsourceMediathek is a community project and we welcome all contributions, be it with Ideas, technical or anything you deem fit.
-
-If you are a developer, let us work together. Please use github repo for development.
-
-= BuddyPress & PsourceMediathek Maintenance & Custom development =
-If you need any assistance with setting up or adding new features to BuddyPress or PsourceMediathek, Our team is available for hire.
-Please use our [BuddyPress Development Services](https://buddydev.com/buddypress-custom-plugin-development-service/) for any custom development needs.
-
-
-== Installation ==
-
-This section describes how to install the plugin and get it working.
-
-You may use our [Installation guide](https://buddydev.com/psourcemediathek/guides/getting-started/installation-updating/ "Installation guide") (recommended) or follow the following steps.
-
-1. Download `psourcemediathek.xyz.zip` (where xyz is version number )and extract
-1. Upload `psourcemediathek` directory to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Visit Dashboard->PsourceMediathek->Settings and click save ( It is important )
-1. That's all. Go ahead and start uploading.
-1. Want to understand each setting, please see our [Configuration guide](https://buddydev.com/psourcemediathek/topics/getting-started/settings-options/configuring-psourcemediathek/ "PsourceMediathek Configuration guide")
-
-== Frequently Asked Questions ==
-
-= Where do I get support? =
-We request you to use [BuddyDev Forums](https://buddydev.com/support/forums/) for all the support questions. We love helping. Using BuddyDev forums allows us to assist you better and quicker.
-
-= Theme compatibility Issue =
-By default, PsourceMediathek should work with 99% of the themes out of the box. There are still a small chance that it may have issues with some theme. 
-Please let us know and we will support you. We are working on guides for theme developers to assist them supporting and making it look/feel like they want.
-
-
-== Screenshots ==
-
-1. Activity upload screen screenshot-1.png
-2. Adding Youtube/Vimeo videos to BuddyPress Activity screenshot-8.png
-2. Media grid screenshot screenshot-2.png
-3. Benutzergalerien Screenshot screenshot-3.png
-4. Youtube/Vimeo videos in activity screenshot-9.png
-5. Youtube vimeo videos in gallery screenshot-10.png
-6. Admin Gallery Edit Page screenshot screenshot-4.png
-7. Front end gallery manage page screenshot-5.png
-8. Bulk Media Edit screenshot screenshot-6.png
-9. Admin Einstellungen screenshot screenshot-7.png
-
-Please see the demo or the PsourceMediathek site for more screenshots.
 
 == Changelog ==
 = 1.5.1 =
