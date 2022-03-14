@@ -66,8 +66,8 @@ class PSMT_Post_Type_Helper {
 		$_labels = array(
 			'name'               => $label_plural,
 			'singular_name'      => $label,
-			'menu_name'          => _x( 'PsourceMediathek', 'PsourceMediathek Admin menu name', 'psourcemediathek' ),
-			'name_admin_bar'     => _x( 'PsourceMediathek', 'PsourceMediathek admin bar menu name', 'psourcemediathek' ),
+			'menu_name'          => _x( 'PS-Mediathek', 'PsourceMediathek Admin menu name', 'psourcemediathek' ),
+			'name_admin_bar'     => _x( 'PS-Mediathek', 'PsourceMediathek admin bar menu name', 'psourcemediathek' ),
 			'all_items'          => _x( 'Alle Galerien', 'PsourceMediathek All galleries label', 'psourcemediathek' ),
 			'add_new'            => _x( 'Galerie hinzufügen', 'admin add new gallery menu label', 'psourcemediathek' ),
 			'add_new_item'       => _x( 'Galerie hinzufügen', 'admin add gallery label', 'psourcemediathek' ),

@@ -23,7 +23,7 @@ class PSMT_Media_List_Widget extends WP_Widget {
 	public function __construct( $name = '', $widget_options = array() ) {
 
 		if ( empty( $name ) ) {
-			$name = __( '(PsourceMediathek) Media List', 'psourcemediathek' );
+			$name = __( 'PSM Medien Liste', 'psourcemediathek' );
 		}
 
 		parent::__construct( false, $name, $widget_options );
@@ -251,7 +251,7 @@ class PSMT_Media_List_Widget extends WP_Widget {
 			// which fields to return ids, id=>parent, all fields(default)
 			'fields'        => false,
 			'column'        => 4,
-			'title'         => _x( 'Recent Media', 'media widget title', 'psourcemediathek' ),
+			'title'         => _x( 'Aktuelle Medien', 'media widget title', 'psourcemediathek' ),
 			'playlist'      => 0,
 			'for'           => '',
 		);
@@ -259,7 +259,7 @@ class PSMT_Media_List_Widget extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $defaults );
 		?>
         <p>
-            <label for="psmt-gallery-widget-title"><?php _e( 'Title:', 'psourcemediathek' ); ?>
+            <label for="psmt-gallery-widget-title"><?php _e( 'Titel:', 'psourcemediathek' ); ?>
                 <input class="widefat" id="psmt-gallery-widget-title"
                        name="<?php echo $this->get_field_name( 'title' ); ?>" type="text"
                        value="<?php echo esc_attr( $instance['title'] ); ?>" style="width: 100%"/>
@@ -269,7 +269,7 @@ class PSMT_Media_List_Widget extends WP_Widget {
 
             <tr>
                 <td>
-                    <label for="<?php echo $this->get_field_id( 'component' ); ?>"><?php _e( 'Select Component:', 'psourcemediathek' ); ?></label>
+                    <label for="<?php echo $this->get_field_id( 'component' ); ?>"><?php _e( 'Komponente auswählen:', 'psourcemediathek' ); ?></label>
                 </td>
                 <td>
 
@@ -283,7 +283,7 @@ class PSMT_Media_List_Widget extends WP_Widget {
             </tr>
             <tr>
                 <td>
-                    <label for="<?php echo $this->get_field_id( 'type' ); ?>"><?php _e( 'Select Type:', 'psourcemediathek' ); ?></label>
+                    <label for="<?php echo $this->get_field_id( 'type' ); ?>"><?php _e( 'Typ auswählen:', 'psourcemediathek' ); ?></label>
                 </td>
                 <td>
 
@@ -297,7 +297,7 @@ class PSMT_Media_List_Widget extends WP_Widget {
             </tr>
             <tr>
                 <td>
-                    <label for="<?php echo $this->get_field_id( 'status' ); ?>"><?php _e( 'Select Status:', 'psourcemediathek' ); ?></label>
+                    <label for="<?php echo $this->get_field_id( 'status' ); ?>"><?php _e( 'Status auswählen:', 'psourcemediathek' ); ?></label>
                 </td>
                 <td>
 					<?php psmt_status_dd( array(
@@ -310,15 +310,15 @@ class PSMT_Media_List_Widget extends WP_Widget {
             </tr>
             <tr>
                 <td>
-                    <label for="<?php echo $this->get_field_id( 'for' ); ?>"><?php _e( 'Media of:', 'psourcemediathek' ); ?></label>
+                    <label for="<?php echo $this->get_field_id( 'for' ); ?>"><?php _e( 'Medien von:', 'psourcemediathek' ); ?></label>
                 </td>
                 <td>
                     <select id="<?php echo $this->get_field_id( 'for' ); ?>"
                             name="<?php echo $this->get_field_name( 'for' ); ?>">
-                        <option value="" <?php selected( '', $instance['for'] ); ?>><?php _e( 'Everyone', 'psourcemediathek' ); ?></option>
-                        <option value="logged" <?php selected( 'logged', $instance['for'] ); ?>><?php _e( 'Logged In User', 'psourcemediathek' ); ?></option>
+                        <option value="" <?php selected( '', $instance['for'] ); ?>><?php _e( 'Jeder', 'psourcemediathek' ); ?></option>
+                        <option value="logged" <?php selected( 'logged', $instance['for'] ); ?>><?php _e( 'Angemeldeter Benutzer', 'psourcemediathek' ); ?></option>
                         <?php if ( psourcemediathek()->is_bp_active() ) : ?>
-                            <option value="displayed" <?php selected( 'displayed', $instance['for'] ); ?>><?php _e( 'Displayed User', 'psourcemediathek' ); ?></option>
+                            <option value="displayed" <?php selected( 'displayed', $instance['for'] ); ?>><?php _e( 'Angezeigter Benutzer', 'psourcemediathek' ); ?></option>
                         <?php endif;?>
                     </select>
 
@@ -326,7 +326,7 @@ class PSMT_Media_List_Widget extends WP_Widget {
             </tr>
             <tr>
                 <td>
-                    <label for="<?php echo $this->get_field_id( 'per_page' ); ?>"><?php _e( 'Per Page:', 'psourcemediathek' ); ?></label>
+                    <label for="<?php echo $this->get_field_id( 'per_page' ); ?>"><?php _e( 'Pro Seite:', 'psourcemediathek' ); ?></label>
                 </td>
                 <td>
                     <input class="" id="<?php echo $this->get_field_id( 'per_page' ); ?>"
@@ -338,40 +338,40 @@ class PSMT_Media_List_Widget extends WP_Widget {
 
             <tr>
                 <td>
-                    <label for="<?php echo $this->get_field_id( 'orderby' ); ?>"><?php _e( 'Order By:', 'psourcemediathek' ); ?></label>
+                    <label for="<?php echo $this->get_field_id( 'orderby' ); ?>"><?php _e( 'Sortieren nach:', 'psourcemediathek' ); ?></label>
                 </td>
                 <td>
                     <select id="<?php echo $this->get_field_id( 'orderby' ); ?>"
                             name="<?php echo $this->get_field_name( 'orderby' ); ?>">
-                        <option value="title" <?php selected( 'title', $instance['orderby'] ); ?>><?php _e( 'Alphabet', 'psourcemediathek' ); ?></option>
-                        <option value="date" <?php selected( 'date', $instance['orderby'] ); ?>><?php _e( 'Date', 'psourcemediathek' ); ?></option>
-                        <option value="rand" <?php selected( 'rand', $instance['orderby'] ); ?>><?php _e( 'Random', 'psourcemediathek' ); ?></option>
+                        <option value="title" <?php selected( 'title', $instance['orderby'] ); ?>><?php _e( 'Alphabetisch', 'psourcemediathek' ); ?></option>
+                        <option value="date" <?php selected( 'date', $instance['orderby'] ); ?>><?php _e( 'Datum', 'psourcemediathek' ); ?></option>
+                        <option value="rand" <?php selected( 'rand', $instance['orderby'] ); ?>><?php _e( 'Zufällig', 'psourcemediathek' ); ?></option>
                     </select>
 
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="<?php echo $this->get_field_id( 'order' ); ?>"><?php _e( 'Sort Order', 'psourcemediathek' ); ?></label>
+                    <label for="<?php echo $this->get_field_id( 'order' ); ?>"><?php _e( 'Sortierreihenfolge', 'psourcemediathek' ); ?></label>
                 </td>
                 <td>
                     <select id="<?php echo $this->get_field_id( 'order' ); ?>"
                             name="<?php echo $this->get_field_name( 'order' ); ?>">
-                        <option value="ASC" <?php selected( 'ASC', $instance['order'] ); ?>><?php _e( 'Ascending', 'psourcemediathek' ); ?></option>
-                        <option value="DESC" <?php selected( 'DESC', $instance['order'] ); ?>><?php _e( 'Descending', 'psourcemediathek' ); ?></option>
+                        <option value="ASC" <?php selected( 'ASC', $instance['order'] ); ?>><?php _e( 'Aufsteigend', 'psourcemediathek' ); ?></option>
+                        <option value="DESC" <?php selected( 'DESC', $instance['order'] ); ?>><?php _e( 'Absteigend', 'psourcemediathek' ); ?></option>
                     </select>
 
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="<?php echo $this->get_field_id( 'playlist' ); ?>"><?php _e( 'Show as playlist?', 'psourcemediathek' ); ?></label>
+                    <label for="<?php echo $this->get_field_id( 'playlist' ); ?>"><?php _e( 'Als Playlist anzeigen?', 'psourcemediathek' ); ?></label>
                 </td>
                 <td>
                     <input type='checkbox' id="<?php echo $this->get_field_id( 'playlist' ); ?>"
                            name="<?php echo $this->get_field_name( 'playlist' ); ?>"
                            value='1' <?php checked( 1, $instance['playlist'] ); ?> />
-                    <p> <?php _e( 'only applies to audio/video type', 'psourcemediathek' ); ?>
+                    <p> <?php _e( 'gilt nur für den Audio/Video-Typ', 'psourcemediathek' ); ?>
                 </td>
             </tr>
 
