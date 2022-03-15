@@ -223,6 +223,8 @@ span.psmt-media-creator-link {
 
 .psmt-gallery-actions {
     display: inline-flex;
+    justify-content: center;
+    gap: 0.1em 0.2em;
 }
 
 .psmt-gallery-single {}
@@ -490,7 +492,7 @@ form#psmt-whats-new-form #psmt-whats-new-options select {
 
 form#psmt-whats-new-form #psmt-whats-new-submit {
     float: right;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 #psmt-whats-new-options {
