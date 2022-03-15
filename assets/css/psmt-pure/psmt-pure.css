@@ -393,6 +393,7 @@ this the same font stack that Normalize.css sets for the `body`.
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
+    float: left;
 }
 
 .psmt-u-1-24 {
@@ -432,6 +433,7 @@ this the same font stack that Normalize.css sets for the `body`.
 .psmt-u-6-24 {
     width: 25%;
     *width: 24.9690%;
+    
 }
 
 .psmt-u-7-24 {
