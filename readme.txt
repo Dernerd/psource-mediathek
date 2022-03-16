@@ -1,9 +1,9 @@
-=== PsourceMediathek ===
+=== PS-Mediathek ===
 Contributors: dern3rd
 Tags: buddypress, buddypress album, buddypress gallery, buddypress photo gallery, video gallery, audio gallery, document gallery, media
 Requires at least: 4.5.0
 Tested up to: 5.7
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,323 +15,45 @@ PsourceMediathek ist eine moderne Mediengalerielösung für WordPress & BuddyPre
 
 Wenn Du nach einer leichten, funktionsreichen BuddyPress Media Gallery-Lösung suchst, die Deinen Benutzern eine angenehme Erfahrung bietet, probiere PsourceMediathek aus.
 
-PsourceMediathek has modular architecture, that makes it easier for developers to extend while keeping the code simple to maintain.
+PsourceMediathek hat eine modulare Architektur, die es Entwicklern erleichtert, sie zu erweitern, während der Code einfach zu Warten ist.
 
-It is built to be reliable, scalable, secure and flexible. We have worked hard to make it easy to use and we will love your feedback in making it better.
+Es ist darauf ausgelegt, zuverlässig, skalierbar, sicher und flexibel zu sein. Wir haben hart daran gearbeitet, es benutzerfreundlich zu machen, und wir freuen uns über Dein Feedback, um es noch besser zu machen.
 
-PsourceMediathek core comes packed with powerful features, some of which are listed below:-
+Der Kern von PsourceMediathek ist vollgepackt mit leistungsstarken Funktionen, von denen einige unten aufgeführt sind:-
 
-= For WordPress:- = 
+= Für WordPress/ClassicPress:- = 
 
- * WordPress Sitewide Photo Gallery, Video Gallery, Audio Gallery, Document Gallery
- * Front End Gallery Creation and upload
- * Allows adding videos from youtube, vimeo facebook etc to BuddyPress Activity and Gallery.
- * Add remote media using link(oembed or direct link to remote file).
- * Most awesome Gallery creation & Management via Dashboard(try and you will love it) 
- * Flexible Privacy for photo, video, audio and other media types
- * Easily extensible Gallery/Media Views
- * If you are a theme designer, you can rewrite whole layout using your own templates
- * Extensive admin options
- * We will improve it a lot more for WordPress in future
+ * Webseitenweite Fotogalerie, Videogalerie, Audiogalerie, Dokumentengalerie
+ * Erstellung und Hochladen einer Front-End-Galerie
+ * Ermöglicht das Hinzufügen von Videos von YouTube, Vimeo, Facebook usw. zu BuddyPress-Aktivitäten und -Galerie
+ * Füge Remote-Medien über den Link hinzu (oembed oder direkter Link zur Remote-Datei)
+ * Die großartigste Galerieerstellung und -verwaltung über das Dashboard (versuche es und Du wirst es lieben) 
+ * Flexibler Datenschutz für Foto-, Video-, Audio- und andere Medientypen
+ * Leicht erweiterbare Galerie-/Medienansichten
+ * Wenn Du ein Themendesigner bist, kannst Du das gesamte Layout mit Deinen eigenen Vorlagen neu schreiben
+ * Umfangreiche Admin-Optionen
+ * Wir werden es in Zukunft noch viel verbessern
 
-PsourceMediathek gives full control to the site admins while making it easier for them/their users to upload media.
+PsourceMediathek gibt den Seitenadministratoren die volle Kontrolle und erleichtert Dir/Deinen Benutzern das Hochladen von Medien.
 
-= For BuddyPress, PsourceMediathek provides following features:- =
+= Für BuddyPress bietet PS-Mediathek folgende Funktionen:- =
 	
- * BuddyPress activity wall upload for videos/audio/photos/documents
- * BuddyPress Photo Gallery, BuddyPress Video Gallery, BuddyPress Audio Gallery and Document Gallery for users and groups
- *  Add youtube video, facebook video, photo etc to BuddyPress/WordPress(using oembed).
- * Add video, photos from another server using link.
- * Highly flexible privacy system (Inbuilt support for public, private, logged in, friends only, groups only, following only, followers only privacy)
- * Drag and Drop Uploader
- * Easy to extend API for other components
- * Easy to extend API to support [new media types](https://buddydev.com/psourcemediathek/topics/api-reference/core/media-type/psmt_register_type/ "Registering new media type " )
- * Multiple Layout for media(Grid, playlist, list)
- * Playlist view support for audio/Video Galleries
- * Shortcode for everything you want(almost).
- * Widgets to help you list galleries, media, playlist , audio etc.
- * Extensive [admin options](https://buddydev.com/psourcemediathek/topics/getting-started/settings-options/configuring-psourcemediathek/ "Configuring PsourceMediathek").
+ * Upload der BuddyPress-Aktivitätswand für Videos/Audio/Fotos/Dokumente
+ * BuddyPress-Fotogalerie, BuddyPress-Videogalerie, BuddyPress-Audiogalerie und Dokumentengalerie für Benutzer und Gruppen
+ * YouTube-Video, Facebook-Video, Foto usw. zu BuddyPress hinzufügen (mit oembed)
+ * Füge Videos und Fotos von einem anderen Server über den Link hinzu.
+ * Hochflexibles Datenschutzsystem (eingebaute Unterstützung für den Datenschutz öffentlich, privat, eingeloggt, nur Freunde, nur Gruppen, nur Folgen, nur Follower)
+ * Drag-and-Drop-Uploader
+ * Einfach erweiterbare API für andere Komponenten
+ * Einfach erweiterbare API zur Unterstützung neuer Medientypen
+ * Mehrere Layouts für Medien (Raster, Wiedergabeliste, Liste)
+ * Playlist-Ansichtsunterstützung für Audio-/Videogalerien
+ * Shortcode für alles, was Du willst (fast)
+ * Widgets zum Auflisten von Galerien, Medien, Wiedergabelisten, Audio usw.
+ * Extensive admin options
 
 
 == Changelog ==
-= 1.5.1 =
+= 1.1.2 =
  * Add WordPress 5.5 compatibility
 
-= 1.5.0 =
- * Add gallery view id to gallery css classes.
- * Allow filtering shortcode templates.
-
-= 1.4.9 =
- * Fix support for Facebook video.
- * Add better directory support for BP Nouveau template pack.
-
-= 1.4.8 =
- * Add icon to close the activity uploader.
- * Fix directory filtering for some theme expecting json response.
- * Make the object counting flexible by allowing meta query.
- * Fix a js notice for query extraction from url.
- * Better Compatibility with Community Builder Theme.
-
-= 1.4.7 =
- * Fix psmt-show-gallery shortcode to only list relevant media.
- * Fix upload error for first upload when default privacy is not public for wall.
- * Fix option to disable auto file chooser for browsers.
- * Add a filter to disable local uploads(only for single gallery upload page).
-
-= 1.4.6 =
- * Fix jQuery conflict issue due to non scoped use of $. Props @raviousprime .
- * Add a filter for media comment. Props Charles.
- * Fix the activity action string for single media.
-
-= 1.4.5 =
- * Allow remote only media mode(PsourceMediathek->Settings->General->Add/Upload media setting).
- * Allow lightbox to be disabled for specific media types.
- * Don't delete PsourceMediathek notifications for user. Mark them as read instead.
- * Using css flexbox for lighbox layout.
- * Cache user gallery count for better performance.
- * If you want to enable single media upload activity comments to be visible on media wall, please use the filter 'psmt_use_single_media_upload_as_media_activity'.
-
-= 1.4.4 =
- * Fix the activity action showing html with BP Nouveau template pack.
- * Fix the notices with taxonomy registration
- * Add 2 new template actions.
-
-= 1.4.3 =
- * Added Lightbox option to use media only lightbox. See psourcemediathek->Settings->Themes panel.
- * Add the oembed media view support in widgets.
- * Add the oembed media view support in shortcodes.
- * Better sitewide gallery support.
- * Update gallery admin visibility to check for permission against individual management menu items.
-
-= 1.4.2 =
- * Fix Media widget fto use proper context.
- * Remove create_function in favor of closures.
-
-= 1.4.1 =
- * Fix the media editing breaking oembed media
- * Change activity action string to be more consistent.
-
-= 1.4.0 =
- * Added support for oembed videos/photos(videos from youtube, vimeo, facebook etc).
- * Added support for adding direct link to remote media(audio,video,photo doc etc)
- * Option to automatically download remote media to the server
- * Added filter to enable media/gallery comment.
- * A lot of other enhancements.
- * For more details, please see the [blog post](https://buddydev.com/psourcemediathek-1-4-0-and-support-for-remote-media/)
-
-= 1.3.7 =
- * Add compatibility with BuddyPress 3.0 Nouveau template pack for empty activity with media attachment.
- * Add namespaced js events
- * Minor enhancements to media upload list
-
-= 1.3.6 =
- * Fix Original size not being used in the lightbox/Single Media page.
- * Add Compatibility with Sitewide Activity Widget.
- * Add API to allow saving binary data as media.
- * Allow 0 to be a valid storage value.
- * Re-written javascript API for lightbox. [Docs](https://buddydev.com/psourcemediathek/topics/api-guides/lightbox/psourcemediathek-lightbox-javascript-api/)
- * API for importing WordPress attachment to PsourceMediathek gallery as PsourceMediathek media. [Docs](https://buddydev.com/psourcemediathek/topics/api-reference/media/import-wordpress-attachment-psourcemediathek-gallery/)
- * API to import file from server's directory to PsourceMediathek Gallery. [Docs](https://buddydev.com/psourcemediathek/topics/api-reference/media/importing-file-psourcemediathek-gallery/)
- * Javascript API for hooking into the lifecycle of PsourceMediathek Uploads. [Docs](https://buddydev.com/psourcemediathek/topics/api-guides/psourcemediathek-uploader-events-lifecycle/)
-
-= 1.3.5 =
- * Fix ios activity upload button issue. Thank you Aubrey.
- * Add 'for' option for Media/Galley shortcode to use 'logged', 'displaye', 'author' context.
- * Add support for Logged In User/Displayed User context in the media/galelry widget.
- * Fix compatibility with Gravity Form Registration addon.
- * Other enhancements to the uploader.
-
-= 1.3.4 =
- * Fix deleted gallery causing "The gallery is not selected" issue.
- * Fix autoloader path to avoid fatal on Admin Einstellungen on some of the installs.
- * Fix the visibility of Gallery/media by detaching the pre_get_posts hook and reattaching it after our query.
-
-= 1.3.3 =
- * Fix Gallery menu item visibility on private groups. Thank you Graham.
- * Fix php notice when user is being deleted(in the cleanup section).
- * Coding style for admin settings section to follow WordPress Coding standards now.
-
-= 1.3.2 =
- * Fix opening of the incorrect media when opening from activity(Regression caused by 1.3.1).
- * Fix document files not opening directly from activity when google doc viewer is disabled.
- * If you are overriding psourcemediathek/default/buddypress/activity/(any of the activity templates), Please update your template file.
-
-= 1.3.1 =
- * Fix issue with crop settings. Crop settings were not applied properly and was always forcing to crop(issue caused by 1.3.0) . Thanks @petrha
- * Fix Prev/Next media issue with sorted gallery. Thanks to @georgio-1 .
- * Added option to enable/disable google doc viewer for documents.
- * Improved the document viewing option by detecting file type and directly linking to file if it can't be viewed.
- * Documents list improvement. Added title everywhere.
- * Lightbox improvement for the documents.
- * Better activity listing for doc items.
- * Some more internal improvements.
-
-= 1.3.0 =
- * Allow lightbox for all media type(document lightbox may not work on local installs).
- * Improved lightbox for mobile devices.
- * Include galleries with 'logged in' status on directory too.
- * Better Activity upload:- Disable post button when media is still loading.
- * Enable lightbox on activity comment. Opens a better lightbox.
- * Allow opening gallery/media in lightbox from any link with proper data attributes.
- * Allow resetting MediaPres settings to default.
- * Improved upload, hardened tests for status and type.
- * On Galerie erstellen, make sure to test for supported status/type and component enable state.
- * Display storage stats for groups too.
- * Add close button in the lightbox.
- * Display media title in the lightbox.
- * Changed default sitewide gallery slug to 'site-gallery' and sitewide archive to 'sitewide-galleries'. Please feel free to change it.
- * Fix:- Empty activity on single page.
- * Fix:- Media reordering on the mobile devices.
- * Fix:- Crop notice.
- * Fix:- Lightbox showing only 10 images.
- * Note:- There are change sin the activity media list template. If you are overriding it, please consider updating.
-
-= 1.2.0 =
- * Security Fix:- Unauthorized users should not be able to bulk update media.
- * Security Enhancement:- Do not allow unauthorized users to view edit screen.
- * Many code improvements to allow us streamline future developments.
- * Code refactoring for core, media, widget, shortcodes. Added doc comments.
- * Added filters on media views/gallery views.
-
-= 1.1.9 =
- * New feature: Allow editing media details inside the lightbox.
- * Fix: Better previous/next link for media and gallery.
- * Note: the template for lightbox-comment.php has been updated for allowing editing media.
-
-= 1.1.8 =
- * Fix: Upload permission error caused by 1.1.7. Reverting strict type checking in permissions functions as it cause issues with the normal user upload.
- * Fix: translation for the Bulk Actions, delete label.
-
-= 1.1.7 =
- * Add option to show the maximum allowed file size inside the upload dropzone.
- * Fix WP_Query notice on profile galleries when static page is set as front page.
- * Hide activity upload buttons when user does not have permission to upload.
- * Better performing user gallery count and media count functions.
- * Compatibility with activity as wire and wall plugin to allow posting on other user's wall.
-
-
-= 1.1.6 =
- * Fix bug from 1.1.5 that caused listing of sitewide galleries on user profile(sorry for the 1.5 hour of trouble).
- * Fix pagination links on ajax loaded gallery list.
-
-= 1.1.5 =
- * Site admins can choose which image size to use in lightbox.
- * Site admins can choose which image size to use for single media page.
- * Media Type labels are now translatable.
- * Activity actions containing type labels are translatable.
- * Added filter 'psmt_wall_gallery_title' to easily modify the naming convention for the wall gallery.
- * Added support for showing the gallery creator when using the shortcode [psmt-list-gallery].
- * Added support for showing the media creator when using the shortcode [psmt-show-gallery].
- * Added support for showing the media creator when using the shortcode [psmt-list-media].
- * A lot of inline code documentation and cleaning(Will continue for next 2 releases)
-
-= 1.1.4 =
- * Add smaller loader image for better usability.
- * Creating a new version since wp.org is not regenerating the old zip.
-
-= 1.1.3 =
- * Allow uploading from activity stream without needing to post content. It make the uploading more easier and user friendly.
- * Add options to allow site admin control the media size and cropping behaviour. Size settings are available from PsourceMediathek->Settings->General screen.
- * Use 'large' image size instead of the original on single media page and lightbox.
- * Better lightbox comment.
-
-= 1.1.2 =
- * Add filter  'psmt_used_space' to allow filtering total used space.
- * Fix the callback for 'private' status to check for the user id instead of relaying on the bp_is_my_profile()
-
-= 1.1.1 =
- * Better caching support. Cleans up media/gallery after update.
- * Introducing multiple new template tags.
- * Updated the templates and PSMT_Gallery View to accept activity id too. Any child view should update..
- * Added admin notice to ask the admins to save the settings atleast once.
-
-= 1.1.0 =
- * Added option to enable lightbox for clicking on photo inside gallery.
- * Brand new icon images for photo, video, audio, doc uploads.
- * Fixed the lightbox not loading all photos.
- * Fixed the error "This file type is not allowed" when the extensions had space
- * Fixed raw media description on bulk edit page to avoid showing the html inside text area.
- * Fixed delete warning text.
- * API Enhancement, allow excluding/including media in queries.
- * A lot of code cleanup
-
-= 1.0.9 =
- * Fixed the recursion causing error on gallery delete.
-
-= 1.0.8 =
- * PsourceMediathek Tools screen warning fix for the Browser class.
- * Almost 30% of codebase inline documentation updated, more to follow.
- * Fix path error for loading logger class.
- * psmt-show-gallery shortcode now defaults to grid if not view is specified.
- * Better current component handling when BuddyPress is disabled.
- * Allow using custom taxonomy query in PSMT_Media_Query and PSMT_Gallery_Query
- * Improve css class names and a few other small tweaks.
-
-
-= 1.0.7 =
- * Fix upload shortcode to avoid it generating the form at the top.
- * Fix Private status issue in groups.
- * Fix single media edit form layout opn mobile devices.
- * Template cleanup
- * User Gallery edit/delete permissions are more granular now.
- * Add filter 'psmt_gallery_auto_update_cover' to allow disabling the auto update of cover to first photo.
- * Fix to respect the default group gallery preference at group creation.
- * Fix date related template functions to show correct date.
-
-= 1.0.6 =
- * Numerous accessibility improve. Huge thanks to @mercime for the contribution.
- * Fix the js error on media edit page. Thank you Sarah( @sitesforchrist )
- * Fix Uploading to group gallery from sitewide activity. Thank you Leo, @valuser
- * Fix the issue which caused attachments to not work on activity screen for some of the users.
- * Added functions fro moving media from one gallery to another gallery.
- * Added support for ondemand gallery creation using the psmt_get_context_gallery hook
- * Updated default archive/single gallery permalink slug to use same string 'galleries'
-
-
-= 1.0.5 =
- * Fix the problem with media upload on new gallery screen in the dashboard
- * Fix a fatal error on BuddyPress 2.6.0 when group is not active
- * Fix a few notices, thanks to @danbp
- * Allow replacing the media selector icons on activity from theme template
- * Use proper url schema for the google doc viewer(for https/non https sites)
- * Fix a few admin translations. Thanks to @danbp
-
-= 1.0.4 =
- * Lightbox javascript API. Now developers can leverage our lightbox Javascript API to open media, list of media in lightbox.
- * Enabling Lightbox for Media list shortcode using lightbox=1 in the shortcode.
- * Enabling lightbox when clicking on single photo in the activity comment on photo.
- * Fix lightbox settings to be applied properly(enabling/disabling).
- * Adding basic debug info for Media.
- * Default status is set to public for media list shortcode to avoid listing private media.
- * Fix Wall Gallery issue with the Doc type.
- * Single Media/Gallery Activity Fix:- Now, will show the activity from all members.
- * Limit number of media visible in activity stream.
- * Add "Galleries" link to User list in the admin for quickly viewing user galleries.
- * Implementation of the Orphaned Media deletion using wp cron.
- * Fallback to default view when the active view is not available.
- * Release notes in details: [Link](https://buddydev.com/psourcemediathek-development/psourcemediathek-1-0-4-availa-now/)
-
-= 1.0.3 =
- * Added pagination support in shortcodes.
- * Fixed Gallery directory pagination.
- * Updated activity privacy to be stricter when the Activity privacy plugin is not enabled.
- * Fixed avatar issue in lightbox.
- * Enhanced the [psmt-uploader] shortcode. It fixes an issue when uploads are for sitewide galleries and provides better experience.
- * Enhanced Create gallery status dropdown to use the default status by default.
- * Fix 2 typos in strings. Thanks to Joost(@joost-abrahams ).
- * Numerous other subtle enhacements ( like allowing extending shortcode etc).
-
-= 1.0.2 =
- * Fixed double form issue on Create gallery page.
- * Fixed a typo in method name for loading templates.
- * Please upgrade if you are seeing double form on create gallery page.
-
-= 1.0.1 =
- * Added uploader shortcode [psmt-uploader].
- * Added My Gallery filters for Gruppengalerien.
- * Added type filters for Benutzergalerien.
- * Other enhancements.
- * Release notes: [Link](https://buddydev.com/psourcemediathek-development/psourcemediathek-1-0-1-is-available-now/)
-
-= 1.0.0 =
- * Initial Release on wp.org repo.

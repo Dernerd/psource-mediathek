@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: PS Mediathek
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: WMS N@W
  * Plugin URI: https://n3rds.work/psourcemediathek/
  * Author URI: https://n3rds.work
@@ -32,7 +32,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 */
 
-require 'core/psource-plugin-update/plugin-update-checker.php';
+require 'psource/psource-plugin-update/psource-plugin-updater.php';
 $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=psource-mediathek', 
 	__FILE__, 
