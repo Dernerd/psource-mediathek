@@ -970,7 +970,7 @@ class PSMT_Local_Storage extends PSMT_Storage_Manager {
 	 *                            at the end of the path
 	 *
 	 * }
-	 * @return string
+	 * @return array
 	 */
 	public function get_upload_dir( $args ) {
 
@@ -1191,12 +1191,16 @@ class PSMT_Local_Storage extends PSMT_Storage_Manager {
 
 		$dirsize = get_transient( 'dirsize_cache' );
 
-		if ( is_array( $dirsize ) && isset( $dirsize[ $directory ]['size'] ) ) {
-			return $dirsize[ $directory ]['size'];
+		if ( ! is_array( $dirsize ) ) {
+			$dirsize = array();
 		}
 
-		if ( false === is_array( $dirsize ) ) {
-			$dirsize = array();
+		if ( ! is_array( $dirsize[ $directory ] ) ) {
+			$dirsize[ $directory ] = array();
+		}
+
+		if ( isset( $dirsize[ $directory ]['size'] ) ) {
+			return $dirsize[ $directory ]['size'];
 		}
 
 		$dirsize[ $directory ]['size'] = self::recurse_dirsize( $directory );

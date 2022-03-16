@@ -54,6 +54,12 @@ PsourceMediathek gibt den Seitenadministratoren die volle Kontrolle und erleicht
 
 
 == Changelog ==
+
+= 1.1.3 =
+
+* Korrektur des Dokumentkommentars für den Rückgabetyp des Upload-Verzeichnisses
+* Hinweis für get_dirsize korrigiert
+
 = 1.1.2 =
  * Add WordPress 5.5 compatibility
 
