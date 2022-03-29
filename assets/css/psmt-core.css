@@ -148,7 +148,9 @@
  
  /** List */
  
- .psmt-item-list {}
+ .psmt-item-list {
+    display: flex;
+ }
  
  .psmt-item {
      text-align: center;
