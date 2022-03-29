@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 ?>
-<a href="#" id = "psmt-reload-bulk-edit-tab" class="psmt-reload" title="<?php _e( 'Reload media edit panel', 'psourcemediathek' );?>"><span class="dashicons dashicons-update"></span> <?php _e( 'Reload', 'psourcemediathek' );?></a>
+<a href="#" id = "psmt-reload-bulk-edit-tab" class="psmt-reload" title="<?php _e( 'Medienbearbeitungsfeld neu laden', 'psourcemediathek' );?>"><span class="dashicons dashicons-update"></span> <?php _e( 'Neu laden', 'psourcemediathek' );?></a>
 <?php
 $current_gallery_id = psmt_get_current_gallery_id();
 
@@ -27,25 +27,25 @@ $current_gallery_id = psmt_get_current_gallery_id();
 		<div class="psmt-g psmt-media-edit-bulk-action-row">
 			<div class="psmt-u-2-24">
 				<?php // allow to check/uncheck. ?>
-				<input type="checkbox" name="psmt-check-all" value="1" id="psmt-check-all" /><label for="psmt-check-all" class="screen-reader-text"><?php _e( 'Bulk select or deselect', 'psourcemediathek' ); ?></label>
+				<input type="checkbox" name="psmt-check-all" value="1" id="psmt-check-all" /><label for="psmt-check-all" class="screen-reader-text"><?php _e( 'Masse auswählen oder abwählen', 'psourcemediathek' ); ?></label>
 			</div>
 
 			<div class="psmt-u-17-24">
-				<label for="psmt-edit-media-bulk-action" class="screen-reader-text"><?php _e( 'Bulk Edit', 'psourcemediathek' ); ?></label>
+				<label for="psmt-edit-media-bulk-action" class="screen-reader-text"><?php _e( 'Massen-Bearbeitung', 'psourcemediathek' ); ?></label>
 
                 <select name="psmt-edit-media-bulk-action" id="psmt-edit-media-bulk-action">
-					<option value=""><?php _e( 'Bulk Action', 'psourcemediathek' );?></option>
-					<option value="delete"><?php _e( 'Delete', 'psourcemediathek' );?></option>
+					<option value=""><?php _e( 'Massenaktion', 'psourcemediathek' );?></option>
+					<option value="delete"><?php _e( 'Löschen', 'psourcemediathek' );?></option>
 				</select>
 
 				<?php do_action( 'psmt_after_media_bulkedit_actions' ); ?>
 				<?php //bulk action ?>
-				<button class="button button-primary psmt-button psmt-button-success psmt-button-primary psmt-bulk-action-apply-button" name="bulk-action-apply" id="bulk-action-apply"><?php _e( 'Apply', 'psourcemediathek' ) ;?></button>
+				<button class="button button-primary psmt-button psmt-button-success psmt-button-primary psmt-bulk-action-apply-button" name="bulk-action-apply" id="bulk-action-apply"><?php _e( 'Anwenden', 'psourcemediathek' ) ;?></button>
 
 			</div>
 
 			<div class="psmt-u-5-24">
-				<button type="submit" name="psmt-edit-media-submit"  id="psmt-edit-media-submit" class="button button-primary"><?php _e( 'Update','psourcemediathek' );?> </button>
+				<button type="submit" name="psmt-edit-media-submit"  id="psmt-edit-media-submit" class="button button-primary"><?php _e( 'Aktualisieren','psourcemediathek' );?> </button>
 
 			</div>
 
@@ -66,7 +66,7 @@ $current_gallery_id = psmt_get_current_gallery_id();
 				<div class='psmt-edit-media' id="psmt-edit-media-<?php psmt_media_id(); ?>">
 
 					<div class="psmt-u-2-24">
-						<input type="checkbox" id="psmt-delete-media-check[<?php echo $media_id;?>]" name="psmt-delete-media-check[<?php echo $media_id;?>]" class="psmt-delete-media-check" value='1' /><label for="psmt-delete-media-check[<?php echo $media_id;?>]" class="screen-reader-text"><?php _e( 'Delete media', 'psourcemediathek' ); ?></label>
+						<input type="checkbox" id="psmt-delete-media-check[<?php echo $media_id;?>]" name="psmt-delete-media-check[<?php echo $media_id;?>]" class="psmt-delete-media-check" value='1' /><label for="psmt-delete-media-check[<?php echo $media_id;?>]" class="screen-reader-text"><?php _e( 'Medien löschen', 'psourcemediathek' ); ?></label>
 					</div>
 
 					<div class='psmt-u-8-24 psmt-edit-media-cover'>
