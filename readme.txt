@@ -3,7 +3,7 @@ Contributors: dern3rd
 Tags: buddypress, buddypress album, buddypress gallery, buddypress photo gallery, video gallery, audio gallery, document gallery, media
 Requires at least: 4.5.0
 Tested up to: 5.7
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,7 @@ PsourceMediathek gibt den Seitenadministratoren die volle Kontrolle und erleicht
 * Hinweis für get_dirsize korrigiert
 * CSS Overhaul
 * BuddyPress Activity zeigt Bilder nun Fullsize/Responsiv
+* Einige Textanpassungen
 
 = 1.1.2 =
  * Add WordPress 5.5 compatibility
