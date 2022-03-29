@@ -60,6 +60,7 @@ PsourceMediathek gibt den Seitenadministratoren die volle Kontrolle und erleicht
 * Korrektur des Dokumentkommentars für den Rückgabetyp des Upload-Verzeichnisses
 * Hinweis für get_dirsize korrigiert
 * CSS Overhaul
+* BuddyPress Activity zeigt Bilder nun Fullsize/Responsiv
 
 = 1.1.2 =
  * Add WordPress 5.5 compatibility

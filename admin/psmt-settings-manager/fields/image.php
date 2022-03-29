@@ -60,7 +60,7 @@ class PSMT_Admin_Settings_Field_Image extends PSMT_Admin_Settings_Field {
 			echo $image;
 			?>
             <br/>
-            <a href="#" class="delete-settings-image <?php echo $class; ?>"><?php _e( 'Remove' ); ?></a>
+            <a href="#" class="delete-settings-image <?php echo $class; ?>"><?php _e( 'Entfernen' ); ?></a>
         </div>
 
 		<?php

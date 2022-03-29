@@ -197,7 +197,7 @@ function psmt_format_activity_action_media_upload( $action, $activity ) {
 		if ( psmt_is_single_media() ) {
 			$action = sprintf( __( '%s', 'psourcemediathek' ), $userlink );
 		} else {
-			$action = sprintf( __( "%s hat %s's %s kommentiert", 'psourcemediathek' ), $userlink, psmt_get_user_link( $media->user_id ), strtolower( psmt_get_type_singular_name( $media->type ) ) ); //brajesh singh commented on @mercime's photo
+			$action = sprintf( __( "%s hat %s's %s kommentiert", 'psourcemediathek' ), $userlink, psmt_get_user_link( $media->user_id ), strtolower( psmt_get_type_singular_name( $media->type ) ) ); 
 		}
 	} elseif ( 'gallery_comment' === $activity_type ) {
 

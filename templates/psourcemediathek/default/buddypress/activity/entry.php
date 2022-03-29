@@ -50,22 +50,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php if ( bp_get_activity_type() == 'activity_comment' ) : ?>
 				<a href="<?php bp_activity_thread_permalink(); ?>" class="button view psmt-bp-secondary-action"
-				   title="<?php esc_attr_e( 'View Conversation', 'psourcemediathek' ); ?>"><?php _e( 'View Conversation', 'psourcemediathek' ); ?></a>
+				   title="<?php esc_attr_e( 'Zeige das Gespräch', 'psourcemediathek' ); ?>"><?php _e( 'Zeige das Gespräch', 'psourcemediathek' ); ?></a>
 			<?php endif; ?>
 
 			<?php if ( is_user_logged_in() ) : ?>
 
 				<?php if ( bp_activity_can_comment() ) : ?>
 					<a href="<?php bp_activity_comment_link(); ?>" class="button psmt-acomment-reply psmt-bp-primary-action" id="psmt-acomment-comment-<?php bp_activity_id(); ?>">
-						<?php printf( __( 'Comment <span>%s</span>', 'psourcemediathek' ), bp_activity_get_comment_count() ); ?>
+						<?php printf( __( 'Kommentar <span>%s</span>', 'psourcemediathek' ), bp_activity_get_comment_count() ); ?>
 					</a>
 				<?php endif; ?>
 
 				<?php if ( bp_activity_can_favorite() ) : ?>
 					<?php if ( ! bp_get_activity_is_favorite() ) : ?>
-						<a href="<?php bp_activity_favorite_link(); ?>" class="button fav psmt-bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'psourcemediathek' ); ?>"><?php _e( 'Favorite', 'psourcemediathek' ); ?></a>
+						<a href="<?php bp_activity_favorite_link(); ?>" class="button fav psmt-bp-secondary-action" title="<?php esc_attr_e( 'Als Favorit markieren', 'psourcemediathek' ); ?>"><?php _e( 'Favorit', 'psourcemediathek' ); ?></a>
 					<?php else : ?>
-						<a href="<?php bp_activity_unfavorite_link(); ?>" class="button unfav psmt-bp-secondary-action" title="<?php esc_attr_e( 'Remove Favorite', 'psourcemediathek' ); ?>"><?php _e( 'Remove Favorite', 'psourcemediathek' ); ?></a>
+						<a href="<?php bp_activity_unfavorite_link(); ?>" class="button unfav psmt-bp-secondary-action" title="<?php esc_attr_e( 'Favorit entfernen', 'psourcemediathek' ); ?>"><?php _e( 'Favorit entfernen', 'psourcemediathek' ); ?></a>
 					<?php endif; ?>
 
 				<?php endif; ?>
@@ -99,10 +99,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="psmt-ac-reply-avatar"><?php bp_loggedin_user_avatar( 'width=' . BP_AVATAR_THUMB_WIDTH . '&height=' . BP_AVATAR_THUMB_HEIGHT ); ?></div>
 					<div class="psmt-ac-reply-content">
 						<div class="psmt-ac-textarea">
-							<label for="psmt-ac-input-<?php bp_activity_id(); ?>" class="screen-reader-text"><?php _e( 'Comment', 'psourcemediathek' ); ?></label>
+							<label for="psmt-ac-input-<?php bp_activity_id(); ?>" class="screen-reader-text"><?php _e( 'Kommentar', 'psourcemediathek' ); ?></label>
 							<textarea id="psmt-ac-input-<?php bp_activity_id(); ?>" class="psmt-ac-input bp-suggestions" name="psmt_ac_input_<?php bp_activity_id(); ?>"></textarea>
 						</div>
-						<input type="submit" name="psmt_ac_form_submit" value="<?php esc_attr_e( 'Post', 'psourcemediathek' ); ?>"/> &nbsp; <a href="#" class="psmt-ac-reply-cancel"><?php _e( 'Cancel', 'psourcemediathek' ); ?></a>
+						<input type="submit" name="psmt_ac_form_submit" value="<?php esc_attr_e( 'Posten', 'psourcemediathek' ); ?>"/> &nbsp; <a href="#" class="psmt-ac-reply-cancel"><?php _e( 'Abbrechen', 'psourcemediathek' ); ?></a>
 						<input type="hidden" name="psmt_comment_form_id" value="<?php bp_activity_id(); ?>"/>
 					</div>
 
