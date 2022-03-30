@@ -1192,7 +1192,7 @@
  }
  
  .psmt-upload-container-inactive {
-     display: none;
+     display: none !important;
  }
  
  .psmt-upload-container-active {

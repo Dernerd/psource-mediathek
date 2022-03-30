@@ -55,6 +55,10 @@ PsourceMediathek gibt den Seitenadministratoren die volle Kontrolle und erleicht
 
 == Changelog ==
 
+= 1.1.4 =
+
+* Der Schließen-Button dürfte jetzt im Aktiivtätsstream zuverläsig verschwinden wenn der Uploader geschlossen wird
+
 = 1.1.3 =
 
 * Korrektur des Dokumentkommentars für den Rückgabetyp des Upload-Verzeichnisses
